@@ -15,11 +15,12 @@ let prezzofin;
 if(eta >= 0 && eta <= 11){
     alert("Il passeggero viaggia gratis.")
 } else if(eta > 11 && eta < 18){
-    prezzofin = prezzokm - prezzokm * 0.2;
-    alert("Il passeggero ha uno sconto del 20% e dovrà pagare: " + prezzofin);
+    prezzofin = Math.round((prezzokm - prezzokm * 0.2 + Number.EPSILON) * 100) / 100;
+    alert("Il passeggero ha uno sconto del 20% e dovrà pagare: " + prezzofin + "\u20AC");
+    console.log(prezzofin);
 } else if(eta > 65){
-    prezzofin = prezzokm - prezzokm * 0.4;
-    alert("Il passeggero ha uno sconto del 20% e dovrà pagare: " + prezzofin);
+    prezzofin = Math.round((prezzokm - prezzokm * 0.4 + Number.EPSILON) * 100) / 100;
+    alert("Il passeggero ha uno sconto del 20% e dovrà pagare: " + prezzofin + "\u20AC");
 } else{
     prezzofin = prezzokm;
     alert("Il passeggero dovrà pagare: " + prezzofin);
