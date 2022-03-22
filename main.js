@@ -26,6 +26,6 @@ if(eta >= 0 && eta <= 11){
     document.getElementById("finale").innerHTML="Il passeggero ha uno sconto del 20% e dovrà pagare: " + prezzofin + "\u20AC";
 } else{
     prezzofin = prezzokm;
-    alert("Il passeggero dovrà pagare: " + prezzofin);
-    document.getElementById("finale").innerHTML="Il passeggero dovrà pagare: " + prezzofin;
+    alert("Il passeggero dovrà pagare: " + prezzofin + "\u20AC");
+    document.getElementById("finale").innerHTML="Il passeggero dovrà pagare: " + prezzofin + "\u20AC";
 }
