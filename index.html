@@ -4,10 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
     <title>Biglietto del treno</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <div class="container text-center mt-4">
+        <div class="row">
+            <div class="col-12 center border-bottom">
+                <h1>Calcolo del prezzo del biglietto del treno</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container border-bottom">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4>Prezzo del Biglietto (0,21&euro;/km)</h4>
+            </div>
+            <div class="col-6 text-end">
+                <p>Bambini (0-11 anni)</p>
+                <p>Adolescenti (12-17 anni)</p>
+                <p>Over 65 (>65 anni)</p>
+            </div>
+            <div class="col-6 text-start">
+                <p>Gratis</p>
+                <p>Sconto del 20%</p>
+                <p>Sconto del 40%</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-auto">
+                <img src="https://www.confartigianato.it/wp-content/uploads/2016/06/italo-uai-800x342.png" 
+                    alt="img treno">
+            </div>
+
+            <div class="col-auto">
+                <div class="row mt-3 mb-3">
+                    <div class="col-6 text-end pt-2">
+                        <label for="eta" class="form-label">Età</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Età" aria-label="Età">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-6 text-end pt-2">
+                        <label for="km" class="form-label">KM da percorrere</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Km" aria-label="Km">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">Calcola</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <script type="text/javascript" src="main.js"></script>
 </body>
