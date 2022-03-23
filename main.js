@@ -2,11 +2,11 @@ let eta;
 let km;
 
 do{
-    eta = parseInt(prompt("Quanti anni hai?"));
+    eta = prompt("Quanti anni hai?");
 } while (eta < 0)
 
 do{
-    km = parseInt(prompt("Quanti chilometri vuoi percorrere?"));
+    km = prompt("Quanti chilometri vuoi percorrere?");
 } while (km < 0)
 
 let prezzokm = 0.21*km;
