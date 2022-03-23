@@ -25,7 +25,13 @@ if(eta >= 0 && eta <= 11){
     alert("Il passeggero ha uno sconto del 20% e dovrà pagare: " + prezzofin + "\u20AC");
     document.getElementById("finale").innerHTML="Il passeggero ha uno sconto del 20% e dovrà pagare: " + prezzofin + "\u20AC";
 } else{
-    prezzofin = prezzokm;
-    alert("Il passeggero dovrà pagare: " + prezzofin + "\u20AC");
-    document.getElementById("finale").innerHTML="Il passeggero dovrà pagare: " + prezzofin + "\u20AC";
+    if(prezzofin==null || prezzofin==NaN || prezzofin==undefined){
+        alert("ERRORE");
+        document.getElementById("finale").innerHTML="ERRORE";
+    }else{
+        prezzofin = prezzokm;
+        alert("Il passeggero dovrà pagare: " + prezzofin + "\u20AC");
+        document.getElementById("finale").innerHTML="Il passeggero dovrà pagare: " + prezzofin + "\u20AC";
+    }
+    
 }
