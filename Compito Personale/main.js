@@ -1,7 +1,7 @@
 const costoKm = 0.21;
-let eta = parseInt(document.getElementById("eta").value);
+let eta = parseInt(document.getElementById(eta).value);
 console.log(typeof eta);
-let km = parseInt(document.getElementById("km").value);
+let km = parseInt(document.getElementById(km).value);
 console.log(typeof km);
 let prezzokm = 0.21*km;
 console.log(typeof prezzokm);
