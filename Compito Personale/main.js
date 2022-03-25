@@ -21,17 +21,19 @@ function dati(){
     } else if(eta > 11 && eta < 18){
 
         //ADOLESCENTI
-        prezzofin = Math.round((prezzokm - prezzokm * 0.2 + Number.EPSILON) * 100) / 100;
+        prezzokm = (prezzokm - prezzokm * 0.2 );
+        prezzofin = prezzokm.toFixed(2);
         document.getElementById("risultato").innerHTML = "Il passeggero ha uno sconto del 20% e dovrà pagare: " + prezzofin + "\u20AC";
     } else if(eta > 65){
 
-        //ADULTI
-        prezzofin = Math.round((prezzokm - prezzokm * 0.4 + Number.EPSILON) * 100) / 100;
+        //SENIOR
+        prezzokm = (prezzokm - prezzokm * 0.4 );
+        prezzofin = prezzokm,toFixed(2);
         document.getElementById("risultato").innerHTML = "Il passeggero ha uno sconto del 20% e dovrà pagare: " + prezzofin + "\u20AC";
     } else{
 
-        //SENIOR
-        prezzofin = prezzokm;
+        //ADULTI
+        prezzofin = prezzokm.toFixed(2);
         document.getElementById("risultato").innerHTML = "Il passeggero dovrà pagare: " + prezzofin + "\u20AC";
     }
 }
