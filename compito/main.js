@@ -1,5 +1,4 @@
-let eta;
-let km;
+let eta, km; //Il programma chiede età e chilometri
 
 do{
     eta = parseInt(prompt("Quanti anni hai?"));
