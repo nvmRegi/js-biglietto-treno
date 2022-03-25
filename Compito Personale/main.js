@@ -32,6 +32,6 @@ function dati(){
 
         //SENIOR
         prezzofin = prezzokm;
-        document.getElementById("risultato").innerHTML = "Il passeggero dovrà pagare: " + prezzofin;
+        document.getElementById("risultato").innerHTML = "Il passeggero dovrà pagare: " + prezzofin + "\u20AC";
     }
 }
