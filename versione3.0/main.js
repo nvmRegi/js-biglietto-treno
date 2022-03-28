@@ -1,9 +1,11 @@
-function dati(){
-    let eta = parseInt(prompt("Inserisci l'età: "));
+function calcolo() {
+    let eta = document.getElementById("eta").value;
+    eta = parseInt(eta);
     console.log(typeof eta);
     console.log(eta);
 
-    let km = parseInt(prompt("Inserisci i km che vuoi fare: "));
+    let km = document.getElementById("km").value;
+    eta = parseInt(km);
     console.log(typeof km);
     console.log(km);
 
@@ -11,25 +13,23 @@ function dati(){
     console.log(typeof prezzokm);
     console.log(prezzokm);
 
-    let prezzofin;
-
-    if(eta >= 0 && eta <= 11){ 
+    if (eta >= 0 && eta <= 11) {
 
         //BAMBINI
         document.getElementById("risultato").innerHTML = "Il passeggero viaggia gratis.";
-    } else if(eta > 11 && eta < 18){
+    } else if (eta > 11 && eta < 18) {
 
         //ADOLESCENTI
-        prezzokm = (prezzokm - prezzokm * 0.2 );
+        prezzokm = (prezzokm - prezzokm * 0.2);
         prezzofin = prezzokm.toFixed(2);
         document.getElementById("risultato").innerHTML = "Il passeggero ha uno sconto del 20% e dovrà pagare: " + prezzofin + "\u20AC";
-    } else if(eta > 65){
+    } else if (eta > 65) {
 
         //SENIOR
-        prezzokm = (prezzokm - prezzokm * 0.4 );
-        prezzofin = prezzokm,toFixed(2);
+        prezzokm = (prezzokm - prezzokm * 0.4);
+        prezzofin = prezzokm, toFixed(2);
         document.getElementById("risultato").innerHTML = "Il passeggero ha uno sconto del 20% e dovrà pagare: " + prezzofin + "\u20AC";
-    } else{
+    } else {
 
         //ADULTI
         prezzofin = prezzokm.toFixed(2);
